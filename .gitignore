@@ -1,0 +1,35 @@
+# Build artifacts
+/target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Documentation
+doc/.docusaurus/
+doc/build/
+doc/node_modules/
+
+# E2E
+e2e/node_modules/
+e2e/test-results/
+e2e/playwright-report/

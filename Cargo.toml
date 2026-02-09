@@ -1,0 +1,54 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/corrode-router",
+    "crates/corrode-orm",
+    "crates/corrode-forms",
+    "crates/corrode-migrate",
+    "crates/corrode-auth",
+    "crates/corrode-admin",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Danny Willems"]
+license = "MIT"
+repository = "https://github.com/leakix/corrode"
+
+[workspace.dependencies]
+corrode-router = { path = "crates/corrode-router" }
+corrode-orm = { path = "crates/corrode-orm" }
+corrode-forms = { path = "crates/corrode-forms" }
+corrode-migrate = { path = "crates/corrode-migrate" }
+corrode-auth = { path = "crates/corrode-auth" }
+corrode-admin = { path = "crates/corrode-admin" }
+oxide-sql-core = { git = "https://github.com/LeakIX/oxide-sql" }
+oxide-sql-derive = { git = "https://github.com/LeakIX/oxide-sql" }
+oxide-sql-sqlite = { git = "https://github.com/LeakIX/oxide-sql" }
+syn = { version = "2", features = ["full", "extra-traits"] }
+quote = "1"
+proc-macro2 = "1"
+tokio = { version = "1.44", features = ["full"] }
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite", "chrono"] }
+clap = { version = "4.5", features = ["derive", "env"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "2.0"
+tracing = "0.1.40"
+argon2 = "0.5"
+password-hash = { version = "0.5", features = ["getrandom"] }
+rand = "0.10"
+regex = "1.10"
+futures = "0.3"
+ironhtml = { version = "1.0.0", features = ["macros"] }
+ironhtml-elements = "1.0.0"
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+[workspace.lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }

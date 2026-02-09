@@ -1,0 +1,20 @@
+[package]
+name = "corrode-forms"
+description = "Django-like form generation and validation with Bootstrap 5 widgets"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+oxide-sql-core.workspace = true
+corrode-orm.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+regex.workspace = true
+ironhtml.workspace = true
+ironhtml-elements.workspace = true
+
+[dev-dependencies]
