@@ -1254,12 +1254,12 @@ checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 [[package]]
 name = "oxide-sql-core"
 version = "0.1.0"
-source = "git+https://github.com/LeakIX/oxide-sql#04f3552c1abde3c80f24415b7967aefff8d0b80b"
+source = "git+https://github.com/LeakIX/oxide-sql#727f893e5de0a8eaf4a1597e7c87b1efb2541218"
 
 [[package]]
 name = "oxide-sql-derive"
 version = "0.1.0"
-source = "git+https://github.com/LeakIX/oxide-sql#04f3552c1abde3c80f24415b7967aefff8d0b80b"
+source = "git+https://github.com/LeakIX/oxide-sql#727f893e5de0a8eaf4a1597e7c87b1efb2541218"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1269,7 +1269,7 @@ dependencies = [
 [[package]]
 name = "oxide-sql-sqlite"
 version = "0.1.0"
-source = "git+https://github.com/LeakIX/oxide-sql#04f3552c1abde3c80f24415b7967aefff8d0b80b"
+source = "git+https://github.com/LeakIX/oxide-sql#727f893e5de0a8eaf4a1597e7c87b1efb2541218"
 dependencies = [
  "oxide-sql-core",
 ]
